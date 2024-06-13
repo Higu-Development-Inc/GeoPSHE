@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disney World Map Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Disney World Map Game</h1>
+<div id="gameContainer">
+<div id="characterContainer">
+<img src="simba.png" alt="Simba" id="simba" draggable="true" ondragstart="drag(event)">
+<img src="elsa.png" alt="Elsa" id="elsa" draggable="true" ondragstart="drag(event)">
+<img src="mulan.png" alt="Mulan" id="mulan" draggable="true" ondragstart="drag(event)">
+<img src="moana.png" alt="Moana" id="moana" draggable="true" ondragstart="drag(event)">
+<img src="aladdin.png" alt="Aladdin" id="aladdin" draggable="true" ondragstart="drag(event)">
+<img src="ariel.png" alt="Ariel" id="ariel" draggable="true" ondragstart="drag(event)">
+<img src="tiana.png" alt="Tiana" id="tiana" draggable="true" ondragstart="drag(event)">
+<img src="pocahontas.png" alt="Pocahontas" id="pocahontas" draggable="true" ondragstart="drag(event)">
+<img src="rapunzel.png" alt="Rapunzel" id="rapunzel" draggable="true" ondragstart="drag(event)">
+<img src="nemo.png" alt="Nemo" id="nemo" draggable="true" ondragstart="drag(event)">
+<img src="buzz.png" alt="Buzz Lightyear" id="buzz" draggable="true" ondragstart="drag(event)">
+<img src="peter.png" alt="Peter Pan" id="peter" draggable="true" ondragstart="drag(event)">
+<img src="jasmine.png" alt="Jasmine" id="jasmine" draggable="true" ondragstart="drag(event)">
+<img src="merida.png" alt="Merida" id="merida" draggable="true" ondragstart="drag(event)">
+<img src="mowgli.png" alt="Mowgli" id="mowgli" draggable="true" ondragstart="drag(event)">
+</div>
+<div id="mapContainer">
+<img src="world-map.png" alt="World Map" id="worldMap">
+<div id="africa" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="norway" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="china" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="polynesia" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="middleeast" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="caribbean" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="america" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="india" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="france" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="australia" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="spain" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="england" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="scotland" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="jungle" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+</div>
+<div id="score">Score: 0</div>
+<div id="feedback"></div>
+<audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
